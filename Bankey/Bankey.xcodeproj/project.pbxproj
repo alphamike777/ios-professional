@@ -12,6 +12,7 @@
 		F129C637280E9DAE00EA7581 /* UIViewController+Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = F129C636280E9DAE00EA7581 /* UIViewController+Utils.swift */; };
 		F129C639280E9FDF00EA7581 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F129C638280E9FDF00EA7581 /* MainViewController.swift */; };
 		F129C63C280EC4B400EA7581 /* AccountSummaryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F129C63B280EC4B400EA7581 /* AccountSummaryViewController.swift */; };
+		F129C63E280ECC3F00EA7581 /* AccountSummaryHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F129C63D280ECC3F00EA7581 /* AccountSummaryHeaderView.swift */; };
 		F13213CD280D4A890082D7F0 /* OnBoardingContainerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F13213CC280D4A890082D7F0 /* OnBoardingContainerViewController.swift */; };
 		F13213CF280D51CB0082D7F0 /* OnboardingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F13213CE280D51CB0082D7F0 /* OnboardingViewController.swift */; };
 		F16071BC280954FC0040C219 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F16071BB280954FC0040C219 /* AppDelegate.swift */; };
@@ -19,6 +20,7 @@
 		F16071C5280954FE0040C219 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F16071C4280954FE0040C219 /* Assets.xcassets */; };
 		F16071C8280954FE0040C219 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F16071C6280954FE0040C219 /* LaunchScreen.storyboard */; };
 		F16071D3280958FF0040C219 /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F16071D2280958FF0040C219 /* LoginView.swift */; };
+		F1DC7DB2280ED10A0055B9FE /* AccountSummaryHeaderView.xib in Resources */ = {isa = PBXBuildFile; fileRef = F1DC7DB1280ED10A0055B9FE /* AccountSummaryHeaderView.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -27,6 +29,7 @@
 		F129C636280E9DAE00EA7581 /* UIViewController+Utils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+Utils.swift"; sourceTree = "<group>"; };
 		F129C638280E9FDF00EA7581 /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 		F129C63B280EC4B400EA7581 /* AccountSummaryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountSummaryViewController.swift; sourceTree = "<group>"; };
+		F129C63D280ECC3F00EA7581 /* AccountSummaryHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountSummaryHeaderView.swift; sourceTree = "<group>"; };
 		F13213CC280D4A890082D7F0 /* OnBoardingContainerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnBoardingContainerViewController.swift; sourceTree = "<group>"; };
 		F13213CE280D51CB0082D7F0 /* OnboardingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingViewController.swift; sourceTree = "<group>"; };
 		F16071B8280954FC0040C219 /* Bankey.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Bankey.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -36,6 +39,7 @@
 		F16071C7280954FE0040C219 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		F16071C9280954FE0040C219 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F16071D2280958FF0040C219 /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
+		F1DC7DB1280ED10A0055B9FE /* AccountSummaryHeaderView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AccountSummaryHeaderView.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -62,6 +66,8 @@
 			isa = PBXGroup;
 			children = (
 				F129C63B280EC4B400EA7581 /* AccountSummaryViewController.swift */,
+				F129C63D280ECC3F00EA7581 /* AccountSummaryHeaderView.swift */,
+				F1DC7DB1280ED10A0055B9FE /* AccountSummaryHeaderView.xib */,
 			);
 			name = AccountSummary;
 			sourceTree = "<group>";
@@ -183,6 +189,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F1DC7DB2280ED10A0055B9FE /* AccountSummaryHeaderView.xib in Resources */,
 				F16071C8280954FE0040C219 /* LaunchScreen.storyboard in Resources */,
 				F16071C5280954FE0040C219 /* Assets.xcassets in Resources */,
 			);
@@ -198,6 +205,7 @@
 				F129C637280E9DAE00EA7581 /* UIViewController+Utils.swift in Sources */,
 				F129C635280E93A200EA7581 /* DummyViewController.swift in Sources */,
 				F16071D3280958FF0040C219 /* LoginView.swift in Sources */,
+				F129C63E280ECC3F00EA7581 /* AccountSummaryHeaderView.swift in Sources */,
 				F129C633280E938200EA7581 /* LocalState.swift in Sources */,
 				F16071C0280954FC0040C219 /* LoginViewController.swift in Sources */,
 				F13213CF280D51CB0082D7F0 /* OnboardingViewController.swift in Sources */,
