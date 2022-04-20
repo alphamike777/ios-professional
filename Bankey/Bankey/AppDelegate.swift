@@ -4,7 +4,6 @@
 //
 //  Created by Ajmal Orawala on 15/04/22.
 //
-
 import UIKit
 
 let appColor: UIColor = .systemTeal
@@ -15,7 +14,6 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     var window: UIWindow?
     let loginViewController = LoginViewController()
     let onboardingViewController = OnboardingContainerViewController()
-   
     let mainViewController = MainViewController()
         
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
@@ -27,25 +25,24 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         loginViewController.delegate = self
         onboardingViewController.delegate = self
         
-   
         displayLogin()
-        
         return true
     }
     
-    private func displayLogin(){
+    private func displayLogin() {
         setRootViewController(loginViewController)
     }
-    private func displayNextScreen(){
-        if LocalState.hasOnboarded{
+    
+    private func displayNextScreen() {
+        if LocalState.hasOnboarded {
             prepMainView()
             setRootViewController(mainViewController)
-        }else{
+        } else {
             setRootViewController(onboardingViewController)
         }
     }
     
-    private func prepMainView(){
+    private func prepMainView() {
         mainViewController.setStatusBar()
         UINavigationBar.appearance().isTranslucent = false
         UINavigationBar.appearance().backgroundColor = appColor
@@ -72,7 +69,7 @@ extension AppDelegate {
 
 extension AppDelegate: LoginViewControllerDelegate {
     func didLogin() {
-      displayNextScreen()
+        displayNextScreen()
     }
 }
 
@@ -80,13 +77,13 @@ extension AppDelegate: OnboardingContainerViewControllerDelegate {
     func didFinishOnboarding() {
         LocalState.hasOnboarded = true
         prepMainView()
-        print("did onboard")
+        setRootViewController(mainViewController)
     }
 }
 
 extension AppDelegate: LogoutDelegate {
     func didLogout() {
-        print("did logout")
         setRootViewController(loginViewController)
     }
 }
+
