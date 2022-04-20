@@ -21,6 +21,8 @@
 		F16071C8280954FE0040C219 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F16071C6280954FE0040C219 /* LaunchScreen.storyboard */; };
 		F16071D3280958FF0040C219 /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F16071D2280958FF0040C219 /* LoginView.swift */; };
 		F198A59A280FC037009E7D51 /* AccountSummaryCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F198A599280FC037009E7D51 /* AccountSummaryCell.swift */; };
+		F198A59C280FEDA1009E7D51 /* DecimalUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = F198A59B280FEDA1009E7D51 /* DecimalUtils.swift */; };
+		F198A59E280FEDDF009E7D51 /* CurrencyFormatter.swift in Sources */ = {isa = PBXBuildFile; fileRef = F198A59D280FEDDF009E7D51 /* CurrencyFormatter.swift */; };
 		F1DC7DB2280ED10A0055B9FE /* AccountSummaryHeaderView.xib in Resources */ = {isa = PBXBuildFile; fileRef = F1DC7DB1280ED10A0055B9FE /* AccountSummaryHeaderView.xib */; };
 /* End PBXBuildFile section */
 
@@ -41,6 +43,8 @@
 		F16071C9280954FE0040C219 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F16071D2280958FF0040C219 /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
 		F198A599280FC037009E7D51 /* AccountSummaryCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountSummaryCell.swift; sourceTree = "<group>"; };
+		F198A59B280FEDA1009E7D51 /* DecimalUtils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DecimalUtils.swift; sourceTree = "<group>"; };
+		F198A59D280FEDDF009E7D51 /* CurrencyFormatter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrencyFormatter.swift; sourceTree = "<group>"; };
 		F1DC7DB1280ED10A0055B9FE /* AccountSummaryHeaderView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AccountSummaryHeaderView.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -60,6 +64,8 @@
 			children = (
 				F129C632280E938200EA7581 /* LocalState.swift */,
 				F129C636280E9DAE00EA7581 /* UIViewController+Utils.swift */,
+				F198A59B280FEDA1009E7D51 /* DecimalUtils.swift */,
+				F198A59D280FEDDF009E7D51 /* CurrencyFormatter.swift */,
 			);
 			name = Util;
 			sourceTree = "<group>";
@@ -226,6 +232,8 @@
 				F16071D3280958FF0040C219 /* LoginView.swift in Sources */,
 				F129C63E280ECC3F00EA7581 /* AccountSummaryHeaderView.swift in Sources */,
 				F129C633280E938200EA7581 /* LocalState.swift in Sources */,
+				F198A59E280FEDDF009E7D51 /* CurrencyFormatter.swift in Sources */,
+				F198A59C280FEDA1009E7D51 /* DecimalUtils.swift in Sources */,
 				F16071C0280954FC0040C219 /* LoginViewController.swift in Sources */,
 				F198A59A280FC037009E7D51 /* AccountSummaryCell.swift in Sources */,
 				F13213CF280D51CB0082D7F0 /* OnboardingViewController.swift in Sources */,
