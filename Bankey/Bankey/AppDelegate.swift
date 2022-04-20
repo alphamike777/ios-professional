@@ -15,7 +15,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     var window: UIWindow?
     let loginViewController = LoginViewController()
     let onboardingViewController = OnboardingContainerViewController()
-    let dummyViewController = DummyViewController()
+   
     let mainViewController = MainViewController()
         
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
@@ -26,13 +26,15 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         
         loginViewController.delegate = self
         onboardingViewController.delegate = self
-        dummyViewController.logoutDelegate = self
         
-        window?.rootViewController = AccountSummaryViewController()
-//        window?.rootViewController = onboardingViewController
-//        window?.rootViewController = AccountSummaryViewController()
-//        window?.rootViewController = OnboardingContainerViewController()
-
+        let vc = mainViewController
+        vc.setStatusBar()
+        
+        UINavigationBar.appearance().isTranslucent = false
+        UINavigationBar.appearance().backgroundColor = appColor
+        
+        window?.rootViewController = vc
+        
         return true
     }
 }
@@ -59,7 +61,7 @@ extension AppDelegate: LoginViewControllerDelegate {
     func didLogin() {
         if LocalState.hasOnboarded {
             print("did login")
-            setRootViewController(dummyViewController)
+            setRootViewController(mainViewController)
         } else {
             print("did login2")
             setRootViewController(onboardingViewController)
@@ -70,7 +72,7 @@ extension AppDelegate: LoginViewControllerDelegate {
 extension AppDelegate: OnboardingContainerViewControllerDelegate {
     func didFinishOnboarding() {
         LocalState.hasOnboarded = true
-        setRootViewController(dummyViewController)
+        setRootViewController(mainViewController)
         print("did onboard")
     }
 }
